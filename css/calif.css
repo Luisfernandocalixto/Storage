@@ -1,0 +1,91 @@
+
+  /* Estilos para los contenedores */
+  .contenedor2 {
+    margin-top: 20px;
+    font-size: 1.2945rem;
+    background-color: #811246;
+    border-radius: 9px;
+    padding: 2rem;
+  }
+  
+  .contenedor3 {
+    margin-top: 20px;
+    font-size: 1.2945rem;
+    background-color: #811246;
+    border-radius: 9px;
+    padding: 2rem;
+  }
+
+
+.container1 {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten automáticamente en pantallas pequeñas */
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.left-section,
+.right-section {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box; /* Asegura que el padding no aumente el ancho */
+    text-align: center; /* Centra el contenido en el centro de la sección */
+}
+
+.imgP {
+    max-width: 100%;
+    height: auto; /* Mantiene la proporción de aspecto de la imagen */
+    border-radius: 12px;
+}
+.h2{
+    font-size: 36;
+}
+
+.materias {
+    list-style: none;
+    padding: 0;
+    font-size: 20px;
+}
+
+.materias li {
+    margin-bottom: 10px;
+    font-size: 33px;
+
+}
+
+input[type="number"] {
+    font-size: 20px;
+    width: 30%;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+button {
+    background-color: #9900ff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #b300b3;
+}
+
+/* Estilos para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .container2 {
+        flex-direction: column; /* Cambia la dirección de flex para apilar elementos */
+        align-items: flex-start; /* Alinea los elementos al principio */
+    }
+
+    .left-section,
+    .right-section {
+        width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+    }
+}
+

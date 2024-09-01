@@ -1,0 +1,94 @@
+/* Estilos generales */
+.contenedor2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.txt {
+    text-align: center;
+}
+.left-column {
+    flex: 1;
+    /* Ocupa todo el espacio disponible en la izquierda */
+    text-align: left;
+    /* Alinea el contenido a la izquierda */
+}
+
+.right-column {
+    flex: 1;
+    /* Ocupa todo el espacio disponible en la derecha */
+    text-align: right;
+    /* Alinea el contenido a la derecha */
+}
+
+
+/* Estilos para los botones */
+.boton-container {
+    text-align: center;
+    /* Centrar los botones horizontalmente */
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #4A011F;
+    color: black;
+    text-decoration: none;
+    border-radius: 9px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.boton:hover {
+    background-color: #811246;
+}
+
+/* Estilos para las columnas */
+.container5 {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las columnas se ajusten a la pantalla */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.columna {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #9F1655;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 9px;
+    background-color: #9F1655;
+    margin: 10px; /* Agrega un margen entre las columnas */
+}
+
+.columna img {
+    margin-top: 30px;
+    max-width: 100px;
+    height: auto;
+}
+
+.columna ul {
+    list-style: none;
+    padding: 0;
+}
+
+.columna ul li {
+    margin-bottom: 20px;
+}
+
+/* Media query para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .container5 {
+        flex-direction: column; /* Cambiar a disposición de columna en pantallas pequeñas */
+        text-align: center; /* Centrar el contenido en pantallas pequeñas */
+    }
+
+    .columna {
+        flex: 1;
+        margin: 10px 0; /* Ajusta el margen superior e inferior en pantallas pequeñas */
+    }
+}
